@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo</title>
 
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+     <style>
         .perfil{
             width: 100px;
             height: auto;
@@ -14,7 +17,6 @@
             border: solid 2px white;
             display: flex;
         }
-
         div{
             background-color: rgb(116, 108, 187);
             margin: auto;
@@ -23,57 +25,71 @@
             position: relative;
             
         }
-
         div div{
             background-color: rgb(183, 175, 255);
             margin: 0px;
         }
-
         body {
-            margin: auto;
-            max-height: 1069px;
-            max-width: 800px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2% 0;
             font-size: 14px;
         }
-
-        h1,h2,p, li{
+        h1,h2,p, li,td{
             color: white;
+            position: relative;
         }
-
-        .icon{
-            width:50px;
-            height: auto;
+        li > p{
+            left: 60px;
+            top: 12px;
+            margin: 0;
+            font-size: 20px;
+            position: absolute;
         }
-
         table{
-            width: 750px;
-            margin: auto;
             border: solid 2px white;
             border-collapse: collapse;
-            border-radius: 5px;
         }
         td{
             border: solid 2px white;
             border-collapse: collapse;
-            color: white;
         }
-        iframe{
-           margin-left: 245px;
+        .icon{
+            width: 50px;
+            height: auto;
+        }
+        #contatos{
+        }
+
+        section {
+            margin-top: 0px;
+            padding-bottom: 5px;
+            border-top: solid 1px rgb(255, 255, 255);
+        }
+
+        a:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        a{
+            color: aliceblue;
         }
 
     </style>
 </head>
 <body style="background-color: rgb(30, 28, 48);">
+
+<main>
 <div>
 
     <div style="border-radius: 5px;">
         <img class="perfil" src="Imagens/P3terB0tGriff1n.png" alt="">
         <h1 style="position: absolute; top: 25px; left: 120px;">Peter Bot Griffin</h1>
-
+        <a href="index.html">voltar</a>
     </div>
-    <a href="index.html">voltar</a>
 
-    <hr>
+
+  <section>
 
         <h1>Experiência</h1>
 
@@ -83,31 +99,37 @@
 
                 <tr>
 
-                    <td>    </td>
-                    <td>Empresa1</td>
-                    <td>Empresa2</td>
+                    <td>Comando Central – Guerra dos Robôs</td>
+                    <td>Indústrias Pawtucket Tech</td>
 
                 </tr>
 
                 <tr>
 
-                    <td>fon</td>
-                    <td>Empresa1</td>
-                    <td>Empresa2</td>
+                    <td>Projetou e implementou bancos de dados militares relacionais para controle de armamentos, utilizando SQL com foco em integridade, segurança e alta disponibilidade</td>
+                    <td>Desenvolveu pipelines de dados escaláveis utilizando Python e ferramentas de ETL, integrando múltiplas fontes de dados corporativos</td>
 
                 </tr>
 
                 <tr>
 
-                    <td>fon</td>
-                    <td>Empresa1</td>
-                    <td>Empresa2</td>
+                    <td>Desenvolveu sistemas de rastreamento logístico com atualização em tempo real, reduzindo falhas operacionais em aproximadamente 35%</td>
+                    <td>Reestruturou bancos de dados legados, melhorando a performance geral dos sistemas em até 45%</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Otimizou consultas críticas, reduzindo o tempo de resposta de relatórios estratégicos em até 60%</td>
+                    <td>Implementou processos de otimização de consultas SQL para grandes volumes de dados</td>
 
                 </tr>
 
             </thead>
 
         </table>
+
+</section>
 
         <figure>
             <img
@@ -118,5 +140,7 @@
 
         <iframe width="280" height="157" src="https://www.youtube.com/embed/FKimhp01CxU?si=m5bEgv--d66QMgzu&amp;controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+</main>
+
 </body>
 </html>
